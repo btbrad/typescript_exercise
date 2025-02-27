@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "esno": "^4.8.0"
   }
 }
