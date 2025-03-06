@@ -104,3 +104,6 @@ type Awaited<T> = T extends null | undefined
     : never
   : T
 type res15 = Awaited<Promise<string>>
+
+type NonNullable<T> = T extends null | undefined ? never : T
+type res16 = NonNullable<string | null | undefined>
