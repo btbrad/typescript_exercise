@@ -19,3 +19,5 @@ type res2 = string extends unknown ? 1 : 2
 type res3 = unknown extends string ? 1 : 2
 type res4 = unknown extends unknown ? 1 : 2
 type res5 = unknown extends any ? 1 : 2
+
+type First<T extends unknown[]> = T extends [] ? never : T[0]
