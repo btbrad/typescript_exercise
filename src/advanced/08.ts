@@ -21,3 +21,6 @@ type res4 = unknown extends unknown ? 1 : 2
 type res5 = unknown extends any ? 1 : 2
 
 type First<T extends unknown[]> = T extends [] ? never : T[0]
+type First2<T extends unknown[]> = T extends [infer First, ...unknown[]]
+  ? First
+  : never
